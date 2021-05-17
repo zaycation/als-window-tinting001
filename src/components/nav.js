@@ -1,0 +1,42 @@
+import React from "react";
+import Flip from "react-reveal/Flip";
+import { FaRegSun } from "react-icons/fa";
+import { Navbar, Nav } from "react-bootstrap";
+
+const nav = () => {
+  return (
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="md"
+      className="nav__bg"
+      fixed="top"
+    >
+      <Navbar.Brand href="/" className="d-flex align-items-center">
+        <Flip bottom>
+          <FaRegSun size={28} className="mr-2" color="#fff" />
+          Al's Window Tinting
+        </Flip>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Flip bottom>
+          <Nav className="mr-auto">
+            <Nav.Link href="/services">Services</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
+          </Nav>
+        </Flip>
+        <Nav className="ml-auto">
+          <Flip bottom>
+            <Nav.Link href="#link" style={{ color: "white" }}>
+              +1 (661) 679-8468
+            </Nav.Link>
+          </Flip>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
+
+export default nav;
