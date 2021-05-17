@@ -20,3 +20,17 @@
     #c21500
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.hero__btn {
+  color: #fff;
+  border: 2px solid #ffc500;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.footer__txt {
+  color: #c21500;
+}
+.footer__txt:hover {
+  color: #000;
+  text-decoration: none !important;
+}

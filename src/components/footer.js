@@ -6,7 +6,11 @@ const footer = () => {
       <hr />
       <div className="d-flex align-items-stretch justify-content-between">
         <p className="ml-3">© 2021 Al's Window Tinting</p>
-        <p className="mr-3">+1 (661) 679-8468</p>
+        <a href="tel:661-679-8468">
+          <p className="mr-3 footer__txt">
+            +1 (661) 679-8468
+          </p>
+        </a>
       </div>
     </div>
   );

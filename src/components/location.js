@@ -91,16 +91,16 @@ const location = () => {
             Drive-to-you Service
           </p>
           <p className="d-flex align-items-center justify-content-center">
-            <RiBankCardLine className="mr-2" color="#ffc500" />
-            Accepts Credit Cards
-          </p>
-          <p className="d-flex align-items-center justify-content-center">
             <RiPinDistanceLine className="mr-2" color="#ffc500" />
             Social Distancing Enforced
           </p>
           <p className="d-flex align-items-center justify-content-center">
             <RiHandSanitizerLine className="mr-2" color="#ffc500" />
             Staff Sanitized Between Clients
+          </p>
+          <p className="d-flex align-items-center justify-content-center">
+            <RiBankCardLine className="mr-2" color="#ffc500" />
+            Accepts Zelle Payments & Credit Cards
           </p>
         </Slide>
       </Col>

@@ -20,16 +20,16 @@ const nav = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Flip bottom>
-          <Nav className="mr-auto">
+        <Nav className="mr-auto">
+          <Flip bottom>
             <Nav.Link href="/services">Services</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
-          </Nav>
-        </Flip>
+          </Flip>
+        </Nav>
         <Nav className="ml-auto">
           <Flip bottom>
-            <Nav.Link href="#link" style={{ color: "white" }}>
+            <Nav.Link href="tel:661-679-8468" style={{ color: "white" }}>
               +1 (661) 679-8468
             </Nav.Link>
           </Flip>
