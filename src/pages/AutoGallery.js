@@ -1,5 +1,5 @@
 import React from "react";
-import items from "../components/itemsList2"
+import items from "../components/itemsList2";
 
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
@@ -26,6 +26,9 @@ const AutoGallery = () => {
   return (
     <>
       <div className="mx-2 my-5">
+        <br />
+        <h4 className="my-3 text-center">Automotive Gallery</h4>
+        <br />
         <ProGallery
           items={items}
           options={options}
