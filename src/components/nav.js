@@ -1,7 +1,7 @@
 import React from "react";
 import Flip from "react-reveal/Flip";
 import { FaRegSun } from "react-icons/fa";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, NavDropdown, Nav } from "react-bootstrap";
 
 const nav = () => {
   return (
@@ -25,6 +25,20 @@ const nav = () => {
             <Nav.Link href="/services">Services</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
+          </Flip>
+
+          <Flip bottom>
+            <NavDropdown title="Galleries" id="basic-nav-dropdown">
+              <Flip bottom>
+                <NavDropdown.Item href="/auto-gallery">
+                  Auto Gallery
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/commercial-residential-gallery">
+                  Commericial/Residential Gallery
+                </NavDropdown.Item>
+              </Flip>
+            </NavDropdown>
           </Flip>
         </Nav>
         <Nav className="ml-auto">

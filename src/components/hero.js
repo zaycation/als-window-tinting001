@@ -1,6 +1,7 @@
 import React from "react";
 import Flip from "react-reveal/Flip";
 import Slide from "react-reveal/Slide";
+import TextLoop from "react-text-loop";
 import { FaSortDown } from "react-icons/fa";
 import { Row, Col, Button } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
@@ -18,10 +19,19 @@ const hero = () => {
           <br />
           <br />
           <Flip bottom>
-            <h2>The Best Tinting Services in the AV</h2>
+            <h2 className="pretrans">The Best Tinting Services in the AV</h2>
           </Flip>
           <br />
-          <br />
+          <Flip bottom>
+            <h4 className="pretrans">
+              Window Tinting for{" "}
+              <TextLoop>
+                <h4 className="type__text pretrans">Auto</h4>
+                <h4 className="type__text pretrans">Commercial</h4>
+                <h4 className="type__text pretrans">Residential</h4>
+              </TextLoop>
+            </h4>
+          </Flip>
           <br />
           <div className="d-flex align-items-center justify-content-center">
             <div>
@@ -52,18 +62,20 @@ const hero = () => {
             </div>
           </div>
           <br />
-          <br />
+
           <br />
           <br />
           <Flip bottom>
-            <h4>Window Tinting | Vehicle Wraps | Tint Removal | And More!</h4>
+            <h4 className="pretrans">
+              Window Tinting | Vehicle Wraps | Tint Removal | And More!
+            </h4>
           </Flip>
           <br />
           <br />
           <br />
           <br />
           <Slide bottom>
-            <HashLink to="#reviews">
+            <HashLink to="#reviews" smooth>
               <FaSortDown size={46} color="#ffc500" />
             </HashLink>
           </Slide>

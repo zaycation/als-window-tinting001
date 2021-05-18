@@ -34,3 +34,12 @@
   color: #000;
   text-decoration: none !important;
 }
+
+.type__text {
+  background: -webkit-linear-gradient(45deg, #c21500, #ffc500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pretrans {
+  font-weight: 800;
+}
